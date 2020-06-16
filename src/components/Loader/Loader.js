@@ -1,9 +1,9 @@
 import React from 'react';
 import './Loader.scss';
 
-function Loader() {
-    return (
-        <div id='loader'>
+function Loader(loading) {
+    if (loading == 'loaded') {
+        var div = <div id='loader' className='loaded'>
             <main>
                 <div class="dank-ass-loader">
                     <div class="row">
@@ -40,6 +40,50 @@ function Loader() {
                     </div>
                 </div>
             </main>
+        </div>;
+    } else if (loading == 'not-loaded') {
+        var div = <div id='loader' className=''>
+            <main>
+                <div class="dank-ass-loader">
+                    <div class="row">
+                        <div class="arrow up outer outer-18"></div>
+                        <div class="arrow down outer outer-17"></div>
+                        <div class="arrow up outer outer-16"></div>
+                        <div class="arrow down outer outer-15"></div>
+                        <div class="arrow up outer outer-14"></div>
+                    </div>
+                    <div class="row">
+                        <div class="arrow up outer outer-1"></div>
+                        <div class="arrow down outer outer-2"></div>
+                        <div class="arrow up inner inner-6"></div>
+                        <div class="arrow down inner inner-5"></div>
+                        <div class="arrow up inner inner-4"></div>
+                        <div class="arrow down outer outer-13"></div>
+                        <div class="arrow up outer outer-12"></div>
+                    </div>
+                    <div class="row">
+                        <div class="arrow down outer outer-3"></div>
+                        <div class="arrow up outer outer-4"></div>
+                        <div class="arrow down inner inner-1"></div>
+                        <div class="arrow up inner inner-2"></div>
+                        <div class="arrow down inner inner-3"></div>
+                        <div class="arrow up outer outer-11"></div>
+                        <div class="arrow down outer outer-10"></div>
+                    </div>
+                    <div class="row">
+                        <div class="arrow down outer outer-5"></div>
+                        <div class="arrow up outer outer-6"></div>
+                        <div class="arrow down outer outer-7"></div>
+                        <div class="arrow up outer outer-8"></div>
+                        <div class="arrow down outer outer-9"></div>
+                    </div>
+                </div>
+            </main>
+        </div>;
+    }
+    return (
+        <div>
+            {div}
         </div>
     )
 }

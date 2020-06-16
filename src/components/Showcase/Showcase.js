@@ -42,8 +42,6 @@ export class Showcase extends Component {
                         </div>
                     </div>);
             }
-        }else{
-            loader = <Loader />;
         }
 
         const settings = {

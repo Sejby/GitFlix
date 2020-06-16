@@ -91,7 +91,6 @@ export class Content extends Component {
         if (this.state.isLoadedPopular === true) {
             var moviesPopular = [];
             var elementsPopular = [];
-            var loader = <Loader id='kokot' />;
             for (var i = 0; i < 17; i++) {
                 moviesPopular.push(this.state.popular.results[i]);
                 elementsPopular.push(
@@ -107,7 +106,6 @@ export class Content extends Component {
                         </div>
                     </div>);
             }
-            loader = null;
         }
 
         if (this.state.isLoadedTopRated === true) {
@@ -148,6 +146,12 @@ export class Content extends Component {
                         </div>
                     </div>);
             }
+        }
+
+        if(this.state.isLoadedNowPlaying && this.state.isLoadedPopular && this.state.isLoadedTopRated && this.state.isLoadedUpcoming){
+            var loader = <Loader loaded/>;
+        }else{
+            var loader = <Loader not-loaded/>;
         }
 
         const settings = {
@@ -198,7 +202,6 @@ export class Content extends Component {
 
         return (
             <div id='content' >
-                {loader}
                 <div id='elementsDiv'>
 
                     <div id='now_playing'>
@@ -223,7 +226,7 @@ export class Content extends Component {
                     </div>
 
                     <div id='upcoming'>
-                        <h3>Up<span>coming</span></h3>
+                        <h3>Upcoming</h3>
                         <Slider {...settings} className='sliderDiv'>
                             {elementsUpcoming}
                         </Slider>

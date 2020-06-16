@@ -8,10 +8,11 @@
  - HTML5
   - CSS3
 
-### `npm start`
 
 
-## Run With
+## How to Install
+
+### `npm install`
 
 ### `npm start`
 

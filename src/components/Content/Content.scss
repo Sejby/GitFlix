@@ -1,0 +1,44 @@
+#content{
+    padding-top: 50px;
+    background-color: #1B2232;
+    color: white;
+    padding-bottom: 100px;
+}
+
+#elementsDiv{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+.posterDiv{
+    border-radius: 10px;
+    opacity: 0.6;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.posterDiv:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#content h3{
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    color: white;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin-top: 30px;
+    padding: 15px
+}
+
+#content span{
+    color: #ff2a55;
+}
+
+.sliderDiv{
+    padding-top: 15px;
+}

@@ -1,0 +1,71 @@
+nav {
+    position: relative;
+    background-color: #1B2232;
+    overflow: hidden;
+}
+
+#logo{
+    padding-left: 50px;
+    font-size: 25px;
+    font-family: 'Fredoka One';
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.centered input {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered input[type=search]{
+    color: lightgrey;
+    padding: 6px;
+    padding-left: 25px;
+    background-color: #2D3342;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    width: 550px;
+    transition: 0.4s;
+}
+
+.centered input[type=search]:hover{
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.centered input[type=search]:focus{ 
+    transition: 0.4s;
+}
+
+.centered :before{
+    content: "\f002";
+    font-family: 'FontAwesome';
+    position: absolute;
+}
+
+nav span{
+    color: #ff2a55;
+}
+
+.right {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.right a:hover{
+    color: #ff2a55;
+    transition: 0.3s ease;
+}

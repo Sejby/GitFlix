@@ -1,0 +1,24 @@
+.bottom-left{
+    position: relative;
+    top: 70%;
+    left: 2%;
+    z-index: 99;
+    color: white;
+    opacity: 1;
+}
+
+.bottom-left h1{
+    font-family: 'Roboto';
+    color: #ff2a55;
+    font-size: 32px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.bottom-left h3{
+    font-family: 'Fredoka One';
+    font-size: 52px;
+    color: lightgrey;
+    font-weight: lighter;
+}
+
